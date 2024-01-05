@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" 
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function(){
+        $('#header').load('Component/header.html');
+        $('#footer').load('Component/footer.html');
+        });
+
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+    <aside>
+        <p>aside</p>
+    </aside>
+
+    <section>
+        <p>Section</p>
+        <h1>Form </h1>
+    
+        <h2>Single Line Input</h2>
+        <form action="youtube.com" method="get">
+            <label for="fname">First name:</label><br>
+            <input type="text" name="fname" maxlength="12" size="12" minlength="5"/>
+            <br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" name="lname" maxlength="14" size="15" minlength="3"/>
+            <br>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])" title="at least one number and one uppercase and lowercase lett" required><br>
+            <input type="submit" name="ok" value="Submit" /><br>
+            <label for="number">Age:</label><br>
+            <input type="number" name="number" id="number" min="1" max="100" required/>
+            <br>
+            <label for="dob">Birthday:</label>
+            <input type="date" id="dob" name="dob" value="2020-07-22" min="1990-01-01" max="2023-12-31" ><br>
+            <label for="desc">Description:</label><br>
+            
+               <label for="desc">Description:</label><br>
+                <textarea rows="5" cols="50" name="Description">
+                Enter description here... 
+                </textarea>
+            
+            <br>
+            <input type = "checkbox" name = "maths" value = "on"checked> Maths
+            <input type = "checkbox" name = "maths" value = "on" checked> Physics <br>
+            <input type = "radio" name = "subject" value = "maths"> Maths
+            <input type = "radio" name = "subject" value = "physics"> Physics
+            <input type = "radio" name = "IT" value = "sciences"> Sciences
+        <br>
+            <input type="checkbox" name="ToA" value="ToA" class="ToA"> I agree this term of agreement.
+            <input type="submit" value="Submit"><br>
+            <select name="sub" id="sub">
+            <option value = "Maths" selected>Maths</option>
+            <option value = "Physics">Physics</option>
+            </select>
+            <br>
+            
+            <label for="browser">Choose your browser from the list:</label>
+            <input list="browsers" name="browser" id="browser" size=”10vw”>
+            <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+            </datalist>
+    
+    
+            </form>
+    </section>
+
+    <article>
+        <h> article</h>
+    </article>
+
+    <div id="footer"></div>
+        
+        
+</body>
+</html>

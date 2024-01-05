@@ -1,0 +1,45 @@
+header {
+    background-color: beige;
+    height: 25vw;
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+aside {
+    background-color: azure;
+    height: 800px;
+    width: 30%;
+    float: left;
+}
+
+section {
+    background-color: cyan;
+    height: 800px;
+    width: 70%;
+    float: left;
+}
+article{
+    background-color: #55a9dacf;
+    height: 100px;
+    width: 100%;
+    position: static;
+    float: left;
+}
+footer{
+    background-color: #258f7368;
+    position: static;
+    float: left;
+    height: 200px;
+    width: 100%;
+}

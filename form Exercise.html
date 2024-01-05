@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Feedback Form Exercise</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" 
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function(){
+        $('#header').load('Component/header.html');
+        $('#footer').load('Component/footer.html');
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+    <aside>
+        <p>aside</p>
+    </aside>
+
+    <section>
+        <p>Section</p>
+        <h1>My Feedback form</h1>
+    <form action="" method="get">           
+        <ul>
+            <li><label for="username">Name:</label>
+            <input type="text" name="username" id="username" maxlength="25" size="" required></li>
+            <li><label for="email">Email:</label>
+            <input type="text" name="email" id="email" required></li>
+            <li><label for="password">Password</label>
+            <input type="password" name="password"></li>
+        </ul>
+        <li>Which One is your choice?</li>
+        <ul>
+            <li><label for="agry">Angry</label>
+            <input type="checkbox" name="agry" id="agry" value="agry"></li>
+            <li><label for="sad">Sad</label>
+            <input type="checkbox" name="sad" id="sad" value="sad"></li>
+            <li><label for="happy">Happy</label>
+            <input type="checkbox" name="happy" id="happy" value="happy" checked></li>
+        </ul>
+        <li>How do you feel to use our service</li>
+        <ul>
+            <li><label for="vsat">Very Satisfied</label>
+                <input type="radio" name="Feeling" id="vsat" value="vsat"></li>
+                <li><label for="sat">Satisfied</label>
+                <input type="radio" name="Feeling" id="sat" value="sat"></li>
+                <li><label for="dsat">Happy</label>
+                <input type="radio" name="Feeling" id="dsat" value="dsat" checked></li>    
+        </ul>
+        <li> <label for="comment">Write Comments</label>
+        <textarea name="comment" id="comment" cols="40" rows="2"></textarea></li>
+        <ul>
+            <li><label for="link">Upload your CV</label>
+            <input type="file" name="link" id="link"  ></li>
+            <li><label for="loc">Location</label>
+            <select name="Location" id="loc">
+            <option value="bagan">Bagan</option>
+            <option value="kalaw">Kalaw</option>
+            <option value="ngwesaung">Ngwe Saung</option>
+            <option value="chaungthar">Chaung Thar</option>
+            </select></li>
+        </ul>
+
+            
+    </form>
+ 
+    </section>
+
+    <article>
+        <h> article</h>
+    </article>
+
+
+    <div id="footer"></div>
+
+            
+        
+</body>
+</html>
